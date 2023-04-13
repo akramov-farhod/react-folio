@@ -16,9 +16,8 @@ body {
 
 .headerDiv {
   top: 0;
-  padding-left: 10px;
-  text-align: start;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .bodyDiv {
   margin-top: 0;
@@ -26,39 +25,52 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #292932;
-  text-align: center;
-  line-height: 50px;
-  color: white;
 }
 .footerDiv {
   bottom: 0;
-  padding-right: 10px;
-  text-align: end;
   border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-#first,
-#second,
-#third {
+.content {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5px;
-  text-align: center;
-  width: 80vw;
-  line-height: 50px;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 100px;
   color: white;
 }
 
 /* content block */
 #first {
-  background-color: #d6a443;
+  background-color: #5050c0;
 }
 /* content block */
 #second {
-  background-color: darkgreen;
+  background-color: #d17a00;
 }
 /* content block */
 #third {
-  background-color: darkcyan;
+  background-color: darkgreen;
+}
+
+.circles {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#firstCircle {
+  background-color: #5050c0;
+}
+#secondCircle {
+  background-color: #d17a00;
+}
+#thirdCircle {
+  background-color: darkgreen;
 }

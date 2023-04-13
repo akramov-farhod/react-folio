@@ -1,5 +1,5 @@
 import "./App.css";
-import { motion, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 
 function App() {
   return (
@@ -8,14 +8,14 @@ function App() {
       <motion.div
         className="bodyDiv"
         initial={{
-          y: -2000,
+          scale: 0,
         }}
         animate={{
-          y: 0,
+          scale: 1,
         }}
         transition={{
           type: "spring",
-          stiffness: 55,
+          stiffness: 32,
         }}
       ></motion.div>
       {/* Header DIV */}
@@ -26,7 +26,7 @@ function App() {
           scale: 0,
         }}
         animate={{
-          x: 10,
+          x: 0,
           scale: 1,
         }}
         transition={{
@@ -34,12 +34,11 @@ function App() {
           stiffness: 40,
           delay: 1,
         }}
-      >
-        <div>HEADER</div>
-      </motion.div>
+      ></motion.div>
       {/* 1st CONTENT */}
       <motion.div
         id="first"
+        className="content"
         initial={{
           y: 1000,
           scale: 0,
@@ -55,12 +54,11 @@ function App() {
           stiffness: 50,
           delay: 3,
         }}
-      >
-        CONTENT
-      </motion.div>
+      ></motion.div>
       {/* 2nd CONTENT */}
       <motion.div
         id="second"
+        className="content"
         initial={{
           y: 1000,
           scale: 0,
@@ -76,12 +74,11 @@ function App() {
           stiffness: 50,
           delay: 3.5,
         }}
-      >
-        CONTENT
-      </motion.div>
+      ></motion.div>
       {/* 3rd CONTENT */}
       <motion.div
         id="third"
+        className="content"
         initial={{
           y: 1000,
           scale: 0,
@@ -97,9 +94,7 @@ function App() {
           stiffness: 50,
           delay: 4,
         }}
-      >
-        CONTENT
-      </motion.div>
+      ></motion.div>
       {/* Footer DIV */}
       <motion.div
         className="footerDiv"
@@ -108,7 +103,7 @@ function App() {
           scale: 0,
         }}
         animate={{
-          x: -20,
+          x: 0,
           scale: 1,
         }}
         transition={{
@@ -116,9 +111,65 @@ function App() {
           stiffness: 40,
           delay: 1.5,
         }}
-      >
-        FOOTER
-      </motion.div>
+      ></motion.div>
+      {/* First Circle */}
+      <motion.div
+        id="firstCircle"
+        className="circles"
+        initial={{
+          x: -70,
+          y: -100,
+          scale: 0,
+        }}
+        animate={{
+          x: -70,
+          y: 250,
+          scale: 1,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 15,
+          delay: 3.5,
+        }}
+      ></motion.div>
+      {/* Second Circle */}
+      <motion.div
+        id="secondCircle"
+        className="circles"
+        initial={{
+          y: -100,
+          scale: 0,
+        }}
+        animate={{
+          y: 250,
+          scale: 1,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 15,
+          delay: 4,
+        }}
+      ></motion.div>
+      {/* third Circle */}
+      <motion.div
+        id="thirdCircle"
+        className="circles"
+        initial={{
+          x: 70,
+          y: -100,
+          scale: 0,
+        }}
+        animate={{
+          x: 70,
+          y: 110,
+          scale: 1,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 15,
+          delay: 4.5,
+        }}
+      ></motion.div>
     </>
   );
 }
