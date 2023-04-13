@@ -123,7 +123,7 @@ function App() {
         }}
         animate={{
           x: -70,
-          y: 250,
+          y: 100,
           scale: 1,
         }}
         transition={{
@@ -141,7 +141,7 @@ function App() {
           scale: 0,
         }}
         animate={{
-          y: 250,
+          y: 100,
           scale: 1,
         }}
         transition={{
@@ -161,7 +161,7 @@ function App() {
         }}
         animate={{
           x: 70,
-          y: 110,
+          y: -40,
           scale: 1,
         }}
         transition={{
