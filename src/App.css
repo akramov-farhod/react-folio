@@ -1,0 +1,64 @@
+@import-normalize;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.headerDiv,
+.footerDiv {
+  position: absolute;
+  background-color: #535659;
+  height: 50px;
+  width: 100%;
+  color: white;
+}
+
+.headerDiv {
+  top: 0;
+  padding-left: 10px;
+  text-align: start;
+  border-bottom-left-radius: 10px;
+}
+.bodyDiv {
+  margin-top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #292932;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+.footerDiv {
+  bottom: 0;
+  padding-right: 10px;
+  text-align: end;
+  border-top-right-radius: 10px;
+}
+
+#first,
+#second,
+#third {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 80vw;
+  line-height: 50px;
+  color: white;
+}
+
+/* content block */
+#first {
+  background-color: #d6a443;
+}
+/* content block */
+#second {
+  background-color: darkgreen;
+}
+/* content block */
+#third {
+  background-color: darkcyan;
+}
